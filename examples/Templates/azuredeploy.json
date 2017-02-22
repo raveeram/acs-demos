@@ -114,7 +114,7 @@
       }
     },
     "windowsAgentAdminPassword": {
-      "type": "string",
+      "type": "securestring",
       "metadata": {
         "description": "Password for the Windows Agent Node Virtual Machines"
       },
@@ -141,7 +141,7 @@
         5
       ],
       "metadata": {
-        "description": "The number of Kubernetes masters for the cluster."
+        "description": "The number of masters for the cluster."
       }
     },
     "sshRSAPublicKey": {
@@ -239,7 +239,7 @@
         },
         "agentPoolProfiles": [
           {
-            "name": "agentpools",
+            "name": "agentpool",
             "count": "[variables('agentCount')]",
             "vmSize": "[variables('agentVMSize')]",
             "dnsPrefix": "[variables('agentsEndpointDNSNamePrefix')]",
